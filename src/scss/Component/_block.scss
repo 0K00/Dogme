@@ -1,0 +1,9 @@
+.block {
+  border-radius: get($radius, 'reg');
+  box-shadow: var(--dogme_sdw--light);
+  padding: get($spacing, '4');
+  border: 1px solid var(--dogme_c--white-dark);
+}
+.block.bg {
+  background-color: var(--dogme_c--white);
+}

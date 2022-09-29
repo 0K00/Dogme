@@ -1,0 +1,31 @@
+@each $key, 
+$value in $radius {
+
+  .rd--#{$key} {
+    border-radius: $value;
+  }
+  .rd_t--#{$key} {
+    border-radius: $value $value 0px 0px;
+  }
+  .rd_b--#{$key} {
+    border-radius: 0px 0px $value $value;
+  }
+  .rd_l--#{$key} {
+    border-radius: $value 0px 0px $value;
+  }
+  .rd_r--#{$key} {
+    border-radius: 0px $value $value 0px;
+  }
+  .rd_tl--#{$key} {
+    border-radius: $value 0px 0px 0px;
+  }
+  .rd_tr--#{$key} {
+    border-radius: 0px $value 0px 0px;
+  }
+  .rd_bl--#{$key} {
+    border-radius: 0px 0px 0px $value;
+  }
+  .rd_br--#{$key} {
+    border-radius: 0px 0px $value 0px;
+  }
+}

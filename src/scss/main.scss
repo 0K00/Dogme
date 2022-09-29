@@ -1,0 +1,35 @@
+// Sass
+@use "sass:map";
+
+// Base
+@import './function';
+@import './config';
+@import './reset';
+
+// Foundation
+@import './Foundation/Colors/color';
+@import './Foundation/Fonts/font';
+@import './Foundation/Icons/icon';
+@import './Foundation/Frames/container';
+@import './Foundation/Frames/spacing';
+@import './Foundation/Frames/grid';
+@import './Foundation/Textures/border';
+@import './Foundation/Textures/shadow';
+@import './Foundation/Textures/radius';
+
+
+// Component
+@import './Component/button';
+@import './Component/tag';
+@import './Component/block';
+@import './Component/input';
+@import './Component/select';
+@import './Component/textarea';
+@import './Component/checkbox';
+@import './Component/radio';
+@import './Component/breadcrumb';
+@import './Component/navbar';
+
+html {
+  font-family: var(--dogme_font);
+}

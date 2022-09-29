@@ -1,0 +1,69 @@
+.radio {
+  position: relative;
+  display: flex;
+  label {
+    cursor: pointer;
+    user-select: none;
+  }
+  input {
+    cursor: pointer;
+    transition: all 150ms ease-in;
+    &:disabled, &:disabled + label {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.radio.sm {
+  gap: get($spacing, '1');
+  align-items: center;
+  label {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  input {
+    transform: scale(0.8);
+  }
+}
+.radio.md {
+  gap: get($spacing, '2');
+  align-items: center;
+  label {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.radio.l {
+  gap: get($spacing, '2');
+  align-items: baseline;
+  label {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  input {
+    transform: scale(1.2);
+  }
+}
+.radio.xl {
+  gap: get($spacing, '4');
+  align-items: baseline;
+  label {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  input {
+    transform: scale(1.5);
+  }
+}
+
+.radio.prm {
+  input {
+    accent-color: var(--dogme_c--colored-default);
+    &:disabled, &:disabled + label, &:disabled::placeholder {
+      color: var(--dogme_c--gray-light);
+    }
+    &:focus + label {
+      color: var(--dogme_c--colored-dark);
+    }
+  }
+}

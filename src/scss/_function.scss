@@ -1,0 +1,21 @@
+@function get($map, $list...) {
+  @each $key in $list {
+      $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+@mixin bp($breakpoint) {
+
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}

@@ -1,0 +1,21 @@
+// Shadow
+  // Normal
+  .sdw_light {
+    box-shadow: var(--dogme_sdw--light);
+  }
+  .sdw_md {
+    box-shadow: var(--dogme_sdw--md);
+  }
+  .sdw_bold {
+    box-shadow: var(--dogme_sdw--bold);
+  }
+  // Inversed
+  .sdw_light--inv {
+    box-shadow: var(--dogme_sdw--light-inv);
+  }
+  .sdw_md--inv {
+    box-shadow: var(--dogme_sdw--md-inv);
+  }
+  .sdw_bold--inv {
+    box-shadow: var(--dogme_sdw--bold-inv);
+  }

@@ -1,0 +1,64 @@
+h1, .h1 {
+  @include font__h--1;
+  color: var(--dogme_c--black);
+}
+h2, .h2 {
+  @include font__h--2;
+  color: var(--dogme_c--black);
+}
+h3, .h3 {
+  @include font__h--3;
+  color: var(--dogme_c--black);
+}
+h4, .h4 {
+  @include font__h--4;
+  color: var(--dogme_c--black);
+}
+h5, .h5 {
+  @include font__h--5;
+  color: var(--dogme_c--black);
+}
+h6, .h6 {
+  @include font__h--6;
+  color: var(--dogme_c--black);
+}
+html, p, .text {
+  @include font__i--1;
+  color: var(--dogme_c--dark);
+}
+strong, .text--bold {
+  @include font__i--2;
+  color: var(--dogme_c--dark);
+}
+small, .text_sm {
+  @include font__i--3;
+  color: var(--dogme_c--dark);
+
+  strong, .text_sm--bold {
+    @include font__i--4;
+    color: var(--dogme_c--dark);
+  }
+}
+.text_sm--bold {
+  @include font__i--4;
+  color: var(--dogme_c--dark);
+}
+
+.interface--1 {
+  @include font__i--1;
+}
+.interface--2 {
+  @include font__i--2;
+}
+.interface--3 {
+  @include font__i--3;
+}
+.interface--4 {
+  @include font__i--4;
+}
+.caps--1 {
+  @include font__c--1;
+}
+.caps--2 {
+  @include font__c--2;
+}

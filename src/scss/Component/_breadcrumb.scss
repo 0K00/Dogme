@@ -1,0 +1,39 @@
+.bread {
+  ul {
+    display: flex;
+    gap: get($spacing, '4');
+    li:not(:last-child)::after {
+      content: '/';
+      color: var(--dogme_c--gray-light);
+      font-weight: 400;
+      margin-left: get($spacing, '4');
+    }
+    li a {
+      all: unset;
+      cursor: pointer;
+      transition: all 150ms ease-in;
+      color: var(--dogme_c--colored-default);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .active a {
+      color: var(--dogme_c--dark);
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+}
+
+.bread.sm {
+  font-size: 12px;
+}
+.bread.md {
+  font-size: 16px;
+}
+.bread.l {
+  font-size: 20px;
+}
+.bread.xl {
+  font-size: 24px;
+}

@@ -1,0 +1,68 @@
+.cols {
+  display: flex;
+  flex-direction: row;
+  padding: 0 get($spacing, '8');
+  gap: get($spacing, '8');
+
+  @include bp('sm') {
+    padding: 0 get($spacing, '4');
+    gap: get($spacing, '4');
+  }
+
+  @include bp('md') {
+    padding: 0 get($spacing, '4');
+  }
+  
+  @each $key, $value in $grid {
+
+    .col, .col--end, .col--ctr, .col_#{$key}, .col_#{$key}--ctr, .col_#{$key}--end {
+      flex-basis: 0;
+      flex-shrink: 1;
+    }
+
+    .col, .col--end, .col--ctr {
+      flex-grow: 1;
+    }
+
+    .col_#{$key}, .col_#{$key}--ctr, .col_#{$key}--end {
+      flex-grow: $value;
+    }
+
+    .col_#{$key}--ctr, .col_#{$key}--end, .col--ctr, .col--end {
+      display: flex;
+    }
+
+    .col_#{$key}--end, .col--end {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .col__row {
+      flex-direction: row;
+    }
+
+  }
+
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+@each $key, $value in $spacing {
+  .gp_#{$key} {
+    gap: $value;
+  }
+}
+
+.cols--nest {
+  padding: 0;
+}
+
+.max {
+  width: 350px;
+}

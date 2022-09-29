@@ -1,0 +1,63 @@
+.textarea {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: get($spacing, '2');
+  label {
+    cursor: pointer;
+    user-select: none;
+  }
+  textarea {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: get($radius, 'light');
+    transition: color 150ms ease-in, border 150ms ease-in, box-shadow 150ms ease-in;
+    &:disabled, &:disabled + label {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.textarea.md {
+  label {
+    font-weight: 700;
+  }
+  textarea {
+    font: 16px "Segoe UI";
+    font-weight: 500;
+    padding: get($spacing, '2') get($spacing, '4');
+  }
+}
+
+.textarea.prm {
+  label {
+    color: var(--dogme_c--dark);
+   }
+   textarea {
+    background: transparent;
+    color: var(--dogme_c--black);
+    border: 2px solid var(--dogme_c--white-dark);
+    &::placeholder {
+      font-weight: 400;
+      color: var(--dogme_c--gray-light);
+    }
+    &:hover {
+      border-color: var(--dogme_c--gray-light);
+    }
+    &:focus {
+      border-color: var(--dogme_c--dark);
+      box-shadow: 0px 0px 0px 2px var(--dogme_c--gray-light);
+    }
+    &:disabled {
+      background: var(--dogme_c--white-dark);
+    }
+    &:disabled, &:disabled + label, &:disabled::placeholder {
+      color: var(--dogme_c--gray-light);
+      border-color: transparent;
+    }
+    &:focus + label {
+      color: var(--dogme_c--colored-dark);
+    }
+   }
+}
