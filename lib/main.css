@@ -342,8 +342,8 @@ small strong, small .text_sm--bold, .text_sm strong, .text_sm .text_sm--bold {
 
 @font-face {
   font-family: "icomoon";
-  src: url("/lib/fonts/icomoon.eot?xgoiar");
-  src: url("/lib/fonts/icomoon.eot?xgoiar#iefix") format("embedded-opentype"), url("/lib/fonts/icomoon.ttf?xgoiar") format("truetype"), url("/lib/fonts/icomoon.woff?xgoiar") format("woff"), url("/lib/fonts/icomoon.svg?xgoiar#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?xgoiar");
+  src: url("fonts/icomoon.eot?xgoiar#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?xgoiar") format("truetype"), url("fonts/icomoon.woff?xgoiar") format("woff"), url("fonts/icomoon.svg?xgoiar#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
