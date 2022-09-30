@@ -5,8 +5,9 @@
   "main": "/lib/main.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sass --watch src/scss/main.scss:lib/main.css",
-    "min": "sass --watch src/scss/main.scss:lib/main.min.css --style compressed"
+    "main": "sass --watch src/scss/main.scss:lib/main.css",
+    "config": "sass --watch src/scss/config.scss:lib/config.css",
+    "build": "sass src/scss/config.scss:lib/config.css && sass src/scss/main.scss:lib/main.css && sass src/scss/config.scss:lib/config.min.css --style compressed && sass src/scss/main.scss:lib/main.min.css --style compressed"
   },
   "author": "",
   "license": "ISC",
