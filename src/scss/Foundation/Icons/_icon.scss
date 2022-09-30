@@ -25,92 +25,101 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon.arrow-bottom-left:before {
+.icon-arrowbottom-left:before {
   content: "\e900";
 }
-.icon.arrow-bottom-right:before {
+.icon-arrowbottom-right:before {
   content: "\e901";
 }
-.icon.arrow-down:before {
+.icon-arrowdown:before {
   content: "\e902";
 }
-.icon.arrow-left:before {
+.icon-arrowleft:before {
   content: "\e903";
 }
-.icon.arrow-right:before {
+.icon-arrowright:before {
   content: "\e904";
 }
-.icon.arrow-top-left:before {
+.icon-arrowtop-left:before {
   content: "\e905";
 }
-.icon.arrow-top-right:before {
+.icon-arrowtop-right:before {
   content: "\e906";
 }
-.icon.arrow-up:before {
+.icon-arrowup:before {
   content: "\e907";
 }
-.icon.bell:before {
+.icon-bell:before {
   content: "\e908";
 }
-.icon.burger:before {
+.icon-burger:before {
   content: "\e909";
 }
-.icon.check:before {
+.icon-check:before {
   content: "\e90a";
 }
-.icon.chevron-down:before {
+.icon-chevron-down:before {
   content: "\e90b";
 }
-.icon.chevron-left:before {
+.icon-chevron-left:before {
   content: "\e90c";
 }
-.icon.chevron-right:before {
+.icon-chevron-right:before {
   content: "\e90d";
 }
-.icon.chevron-up:before {
+.icon-chevron-up:before {
   content: "\e90e";
 }
-.icon.cross-1:before {
+.icon-clipboard:before {
   content: "\e90f";
 }
-.icon.cross-2:before {
+.icon-cross-1:before {
   content: "\e910";
 }
-.icon.dots-horizontal:before {
+.icon-cross-2:before {
   content: "\e911";
 }
-.icon.dots-vertical:before {
+.icon-dotshorizontal:before {
   content: "\e912";
 }
-.icon.download:before {
+.icon-dotsvertical:before {
   content: "\e913";
 }
-.icon.gear:before {
+.icon-download:before {
   content: "\e914";
 }
-.icon.link-none-1:before {
+.icon-gear:before {
   content: "\e915";
 }
-.icon.link-none-2:before {
+.icon-heart-fill:before {
   content: "\e916";
 }
-.icon.link-1:before {
+.icon-heart:before {
   content: "\e917";
 }
-.icon.link-2:before {
+.icon-linknone-1:before {
   content: "\e918";
 }
-.icon.minus:before {
+.icon-linknone-2:before {
   content: "\e919";
 }
-.icon.plus:before {
+.icon-link-1:before {
   content: "\e91a";
 }
-.icon.search:before {
+.icon-link-2:before {
   content: "\e91b";
 }
-.icon.upload:before {
+.icon-minus:before {
   content: "\e91c";
+}
+.icon-plus:before {
+  content: "\e91d";
+}
+.icon-search:before {
+  content: "\e91e";
+}
+.icon-upload:before {
+  content: "\e91f";
 }
 
 .icon.sm {
