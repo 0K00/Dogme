@@ -1,0 +1,144 @@
+// Spacings variables
+$spacing: (
+  // thin
+  "0": var(--dogme_sg--0),
+  // extralight
+  "1": var(--dogme_sg--1),
+  // light
+  "2": var(--dogme_sg--2),
+  // normal
+  "4": var(--dogme_sg--4),
+  // medium
+  "8": var(--dogme_sg--8),
+  // bold
+  "16": var(--dogme_sg--16),
+  // extrabold
+  "32": var(--dogme_sg--32),
+  // black
+  "64": var(--dogme_sg--64),
+  // auto
+  "auto": var(--dogme_sg--auto),
+) !default;
+
+// Radius variables
+$radius: (
+"none": var(--dogme_rd--none),
+"thin": var(--dogme_rd--thin),
+"light": var(--dogme_rd--light),
+"reg": var(--dogme_rd--reg),
+"md": var(--dogme_rd--md),
+"bold": var(--dogme_rd--bold),
+"black": var(--dogme_rd--black),
+"full": var(--dogme_rd--full),
+) !default;
+
+// Breakpoints variables
+$breakpoints: (
+  // small (tablet)
+  "sm": (max-width: var(--dogme_bp--sm)),
+  // medium
+  "md": (max-width: var(--dogme_bp--md)),
+  // large (laptop)
+  "lg": (max-width: var(--dogme_bp--lg)),
+  // Extralarge (desktop)
+  "xl": (max-width: var(--dogme_bp--xl)),
+  // Double Extralarge
+  "2xl": (max-width: var(--dogme_bp--2xl)),
+) !default;
+
+// Grids variables
+$grid: (
+  // flex-grow
+  "0": 0,
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+  "6": 6,
+  "7": 7,
+  "8": 8,
+  "9": 9,
+  "10": 10,
+  "11": 11,
+  "12": 12,
+) !default;
+
+// Font
+  // Heading
+  @mixin font__h--1 {
+    font-family: var(--dogme_font);
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 700;
+  }
+  @mixin font__h--2 {
+    font-family: var(--dogme_font);
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+  }
+  @mixin font__h--3 {
+    font-family: var(--dogme_font);
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  @mixin font__h--4 {
+    font-family: var(--dogme_font);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  @mixin font__h--5 {
+    font-family: var(--dogme_font);
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+  @mixin font__h--6 {
+    font-family: var(--dogme_font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+// Inteface
+  @mixin font__i--1 {
+    font-family: var(--dogme_font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  @mixin font__i--2 {
+    font-family: var(--dogme_font);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  @mixin font__i--3 {
+    font-family: var(--dogme_font);
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  @mixin font__i--4 {
+    font-family: var(--dogme_font);
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+// Caps
+  @mixin font__c--1 {
+    font-family: var(--dogme_font);
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  @mixin font__c--2 {
+    font-family: var(--dogme_font);
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+  }
