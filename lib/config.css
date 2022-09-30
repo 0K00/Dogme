@@ -1,0 +1,46 @@
+* {
+  --dogme_c--white: #E5E5E5;
+  --dogme_c--white-dark: #f3f3f3;
+  --dogme_c--gray-light: #ffffff;
+  --dogme_c--gray-default: #3B3F3A;
+  --dogme_c--gray-dark: #0e0e0e;
+  --dogme_c--colored-default: #30A46C;
+  --dogme_c--colored-dark: #18794E;
+  --dogme_c--dark: #153226;
+  --dogme_c--black: #171717;
+  --dogme_c--info: #30A46C;
+  --dogme_c--success: #5cc269;
+  --dogme_c--danger: #C44B4B;
+  --dogme_c--warning: #ffd81d;
+  --dogme_bp--sm: 640px;
+  --dogme_bp--md: 768px;
+  --dogme_bp--lg: 1024px;
+  --dogme_bp--xl: 1280px;
+  --dogme_bp--2xl: 1536px;
+  --dogme_rd--none: 0px;
+  --dogme_rd--thin: 0.125rem;
+  --dogme_rd--light: 0.25rem;
+  --dogme_rd--reg: 0.5rem;
+  --dogme_rd--md: 1rem;
+  --dogme_rd--bold: 2rem;
+  --dogme_rd--black: 4rem;
+  --dogme_rd--full: 360px;
+  --dogme_sg--0: 0;
+  --dogme_sg--1: 0.25rem;
+  --dogme_sg--2: 0.5rem;
+  --dogme_sg--4: 1rem;
+  --dogme_sg--8: 2rem;
+  --dogme_sg--16: 4rem;
+  --dogme_sg--32: 8rem;
+  --dogme_sg--64: 16rem;
+  --dogme_sg--auto: auto;
+  --dogme_sdw--light: 0px 8px 32px rgba(0, 0, 0, 0.08);
+  --dogme_sdw--md: 0px 8px 32px rgba(0, 0, 0, 0.2);
+  --dogme_sdw--bold: 0px 8px 32px rgba(0, 0, 0, 0.3);
+  --dogme_sdw--light-inv: 0px -8px 32px rgba(0, 0, 0, 0.2);
+  --dogme_sdw--md-inv: 0px -8px 32px rgba(0, 0, 0, 0.3);
+  --dogme_sdw--bold-inv: 0px -8px 32px rgba(0, 0, 0, 0.08);
+  --dogme_font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=config.css.map */
